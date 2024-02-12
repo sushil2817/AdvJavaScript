@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 5rem;
+    background-color: rgb(16, 15, 15);
+    color: whitesmoke;
+    /* text-align: center; */
+}

@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(69, 66, 66);
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color, table th,td{
+    border: 2px solid white;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
