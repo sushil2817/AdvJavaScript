@@ -26,12 +26,20 @@
     
 // }
 
-for (let i = 1; i <=20 ; i++) {
+// for (let i = 1; i <=20 ; i++) {
 
-    if(i==5){
-        console.log("value is 5");
-        continue
-    }
-    console.log(`Value of i is ${i}`);
+//     if(i==5){
+//         console.log("value is 5");
+//         continue
+//     }
+//     console.log(`Value of i is ${i}`);
     
+// }
+
+
+let index = 0;
+
+while(index <=10){
+    console.log(`Value o index is ${index}`);
+    index = index+2;
 }
