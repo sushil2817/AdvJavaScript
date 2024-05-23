@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.containor{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap:5px;
+}
+.innerBox{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 10px;
+}
+
+.button{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#gray{
+    background-color: gray;
+}
+#white{
+    background-color: white;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
