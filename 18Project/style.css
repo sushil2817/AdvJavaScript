@@ -1,0 +1,20 @@
+*{
+    background-color: #252525;
+    color: aliceblue;
+}
+
+body{
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.clock{
+    font-size: 60px;
+    font-weight:bolder;
+    background-color:cornsilk;
+    color: black;
+    text-shadow: 1px 1px 1px whitesmoke;
+}
