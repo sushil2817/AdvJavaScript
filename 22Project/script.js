@@ -1,4 +1,4 @@
-const radomColor = function(){
+const randomColor = function(){
     const hex = "0123456789ABCDEF"
     let color = '#'
     for(let i=0;i<6;i++){
@@ -8,5 +8,25 @@ const radomColor = function(){
     return color;
 }
 
+
+const startChangingColor = () =>{
+
+    setInterval(changeBgColor,1000)
+
+          function changeBgColor(){
+
+              document.body.style.backgroundColor = randomColor()
+          }    
+}
+
+const stopChangingColor = () =>{
+    
+}
+
 document.querySelector('#start').addEventListener('click',startChangingColor)
-radomColor()
+
+
+document.querySelector('#stop').addEventListener('click',stopChangingColor){}
+
+
+
