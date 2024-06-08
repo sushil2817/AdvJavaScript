@@ -1,32 +1,31 @@
-const randomColor = function(){
+const randomColor = function () {
     const hex = "0123456789ABCDEF"
     let color = '#'
-    for(let i=0;i<6;i++){
-        color += hex[Math.floor(Math.random()*16)]
+    for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)]
     }
 
     return color;
 }
 
 
-const startChangingColor = () =>{
+const startChangingColor = () => {
 
-    setInterval(changeBgColor,1000)
+    setInterval(changeBgColor, 1000)
 
-          function changeBgColor(){
+    function changeBgColor() {
 
-              document.body.style.backgroundColor = randomColor()
-          }    
+        document.body.style.backgroundColor = randomColor()
+    }
 }
 
-const stopChangingColor = () =>{
-    
+const stopChangingColor = () => {
+
 }
 
-document.querySelector('#start').addEventListener('click',startChangingColor)
+document.querySelector('#start').addEventListener('click', startChangingColor)
 
 
-document.querySelector('#stop').addEventListener('click',stopChangingColor){}
-
+document.querySelector('#stop').addEventListener('click', stopChangingColor)
 
 
