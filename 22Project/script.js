@@ -8,10 +8,12 @@ const randomColor = function () {
     return color;
 }
 
-
+let intervalId
 const startChangingColor = () => {
+    if(intervalId){
+        intervalId =  setInterval(changeBgColor, 100)
+    }
 
-    setInterval(changeBgColor, 1000)
 
     function changeBgColor() {
 
@@ -20,6 +22,9 @@ const startChangingColor = () => {
 }
 
 const stopChangingColor = () => {
+         clearInterval(intervalId)
+         intervalId = null;
+         document.body.style.backgroundColor = "#FFFF"
 
 }
 
