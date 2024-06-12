@@ -67,7 +67,7 @@ const promiseFive = new Promise((res,rej)=>{
            }else{
             rej("Error: JS went wrong");
            }
-       },3000)
+       },2000)
 })
 
 promiseFive.then()
