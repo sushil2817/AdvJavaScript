@@ -70,4 +70,38 @@ const promiseFive = new Promise((res,rej)=>{
        },2000)
 })
 
-promiseFive.then()
+async function consumePromiseFive(){
+   try {
+    const response =  await promiseFive
+   console.log(response);
+   } catch (error) {
+       console.log(error);
+   }
+}
+
+consumePromiseFive()
+
+
+// async function getAllUsers(){
+//    try {
+//      const response = await fetch('https://jsonplaceholder.typicode.com/users')
+ 
+//      const data = await response.json()
+//      console.log(data);
+//    } catch (error) {
+//        console.log("ERROR: ",error);
+//    }
+// }
+
+// getAllUsers()
+
+fetch('https://api.github.com/users/sushil2817')
+.then((res)=>{
+       return res.json()
+})
+.then((data)=>{
+       console.log(data);
+})
+.catch((error)=>{
+    console.log("ERROR: ",Error);
+})
