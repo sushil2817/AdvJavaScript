@@ -9,11 +9,11 @@ const User = {
         return this._email.toUpperCase()
     },
 
-    set email(email){
+    set email(value){
             this._email = value
     }
 }
 
 
 const tea = Object.create(User)
-console.log(tea.);
+console.log(tea.email);
