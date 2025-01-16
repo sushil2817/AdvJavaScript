@@ -6,7 +6,6 @@
 //     displayName();
 // }
 // init();
-
 // --------------- lexical scoping -------------
 function outer() {
   let username = "sushil";
@@ -24,9 +23,7 @@ function outer() {
 }
 outer();
 // console.log("TOO Outer", username);
-
 // -------------------- closur---------------
-
 // function makeFunc() {
 //     const name = "Mozilla";
 //     function displayName() {
@@ -37,3 +34,4 @@ outer();
 
 // const myFunc = makeFunc();
 // myFunc();
+
