@@ -1,11 +1,8 @@
 // Old method  for getter and setters
 // function base
 function User(email,password){
-
     this._email = email;
     this._password = password
-
-
     Object.defineProperty(this,'email',{
         get:function(){
             return this._email.toUpperCase() 
@@ -23,8 +20,6 @@ function User(email,password){
         }
     })
 }
-
 const hello = new User("hello@hello.com","hello")
-
 console.log(hello.password);
 console.log(hello.email);
